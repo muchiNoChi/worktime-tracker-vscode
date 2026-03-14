@@ -2,6 +2,8 @@
 
 A minimal VSCode extension for tracking work time in a plain text file.
 
+Inspired by Egor's https://github.com/plotnik plugin for JEdit.
+
 ## How it works
 
 Click the **$(watch) Start task** button in the status bar to begin a task. The tracking file opens automatically with the cursor ready for you to type a description. Click **$(watch) Stop task** when you're done.
