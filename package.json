@@ -1,6 +1,6 @@
 {
-  "name": "time-tracker-vscode",
-  "displayName": "Time Tracker",
+  "name": "worktime-tracker-vscode",
+  "displayName": "Work Time Tracker",
   "description": "Simple work time tracker with a status bar button",
   "version": "0.0.1",
   "publisher": "muchiNoChi",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/muchiNoChi/time-tracker-vscode"
+    "url": "https://github.com/muchiNoChi/worktime-tracker-vscode"
   },
   "activationEvents": [
     "onStartupFinished"
@@ -23,11 +23,11 @@
     "commands": [
       {
         "command": "timeTracker.toggle",
-        "title": "Time Tracker: Toggle Task"
+        "title": "Work Time Tracker: Toggle Task"
       }
     ],
     "configuration": {
-      "title": "Time Tracker",
+      "title": "Work Time Tracker",
       "properties": {
         "timeTracker.filePath": {
           "type": "string",
