@@ -1,0 +1,49 @@
+{
+  "name": "time-tracker-vscode",
+  "displayName": "Time Tracker",
+  "description": "Simple work time tracker with a status bar button",
+  "version": "0.0.1",
+  "publisher": "muchiNoChi",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muchiNoChi/time-tracker-vscode"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "timeTracker.toggle",
+        "title": "Time Tracker: Toggle Task"
+      }
+    ],
+    "configuration": {
+      "title": "Time Tracker",
+      "properties": {
+        "timeTracker.filePath": {
+          "type": "string",
+          "default": "~/time-tracking.txt",
+          "description": "Absolute path to the time tracking file"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.110.0",
+    "typescript": "^5.9.3"
+  }
+}
