@@ -1,7 +1,7 @@
 {
   "name": "worktime-tracker-vscode",
-  "displayName": "Work Time Tracker",
-  "description": "Simple work time tracker with a status bar button",
+  "displayName": "My Work Time Tracker",
+  "description": "Simple My Work Time Tracker with a status bar button",
   "version": "0.0.1",
   "publisher": "muchiNoChi",
   "license": "MIT",
@@ -23,11 +23,11 @@
     "commands": [
       {
         "command": "timeTracker.toggle",
-        "title": "Work Time Tracker: Toggle Task"
+        "title": "My Work Time Tracker: Toggle Task"
       }
     ],
     "configuration": {
-      "title": "Work Time Tracker",
+      "title": "My Work Time Tracker",
       "properties": {
         "timeTracker.filePath": {
           "type": "string",

@@ -216,11 +216,11 @@ export function activate(context: vscode.ExtensionContext) {
   function updateStatusBar() {
     if (isTracking) {
       statusBar.text = '$(watch) Stop task';
-      statusBar.tooltip = 'Work Time Tracker: click to stop task';
+      statusBar.tooltip = 'My Work Time Tracker: click to stop task';
       statusBar.backgroundColor = new vscode.ThemeColor('statusBarItem.warningBackground');
     } else {
       statusBar.text = '$(watch) Start task';
-      statusBar.tooltip = 'Work Time Tracker: click to start task';
+      statusBar.tooltip = 'My Work Time Tracker: click to start task';
       statusBar.backgroundColor = undefined;
     }
   }
@@ -236,7 +236,7 @@ export function activate(context: vscode.ExtensionContext) {
     try {
       ensureFileExists(filePath);
     } catch (err) {
-      vscode.window.showErrorMessage(`Work Time Tracker: cannot create file at ${filePath}: ${err}`);
+      vscode.window.showErrorMessage(`My Work Time Tracker: cannot create file at ${filePath}: ${err}`);
       return;
     }
 

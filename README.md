@@ -1,4 +1,4 @@
-# VSCode Work Time Tracker
+# VSCode My Work Time Tracker
 
 A minimal VSCode extension for tracking work time in a plain text file.
 
